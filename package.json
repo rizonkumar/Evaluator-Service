@@ -19,7 +19,10 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
     "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
     "express": "^4.19.2"
   }
 }
