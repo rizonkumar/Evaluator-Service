@@ -39,3 +39,9 @@ Note: Make relevant config changes in tsconfig.json
 ```
 npm run dev
 ```
+
+### To start redis
+
+```
+redis-cli
+```
