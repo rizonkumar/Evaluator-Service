@@ -1,8 +1,9 @@
 import express, { Express } from "express";
 
 import serverConfig from "./config/serverConfig";
-import apiRouter from "./routes";
+import runPython from "./container/runPythonDocker";
 import sampleQueueProducer from "./producers/sampleQueueProducer";
+import apiRouter from "./routes";
 import SampleWorker from "./workers/sampleWorker";
 
 const app: Express = express();
@@ -18,4 +19,7 @@ app.listen(serverConfig.PORT, () => {
     position: "Software Engineer",
     location: "Remote | BLR",
   });
+
+  const code = `print("Hello, World!")`;
+  runPython(code);
 });
